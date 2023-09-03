@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAKER</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="dark-theme">
+      <label class="switch">
+        <input type="checkbox" class="dark_btn">
+        <span class="slider round"></span>
+      </label>
+    </div>
+   
+    <header>
+      <h1 class="logo">FAKER</h1>
+      <div class="line"></div>
+      <h2 class="slogan">
+        Достоверность информации - наш главный принцип! Приветствуем вас на
+        FAKER - инновационной платформе, которая поможет вам отличить фейковые
+        новости от правдивых.
+      </h2>
+    </header>
+    <div class="main">
+      <form id="check_news" action="/" method="post">
+        <input
+          type="text"
+          id="inputField"
+          placeholder="Вставьте ссылку на новость..."
+          name="message"
+        />
+        <button type="submit" class="btn_check btn">Проверить новость</button>
+      </form>
+      
+
+      <div class="result">
+        <div id="loader"></div>
+        <div class="result_wrapper">
+          <div class="result_wrapper_block">
+            <div class="result_icon"></div>
+            <p class="result_text">
+              
+            </p>
+          </div>
+        </div> 
+        <button class="btn_back btn">Назад</button>
+      </div>
+          
+
+    <div class="arrow"></div>
+
+    <div class="information">
+      <div class="information_block">
+        <h3 class="information_block-header" id="1">FAKER</h3>
+        <div class="information_block-wrapper">
+          <p class="information_text">
+            - это инновационная онлайн-платформа, предназначенная для борьбы с
+            фейковыми новостями и обеспечения достоверности информации. Наша
+            миссия - помочь пользователям различать между фейковыми и правдивыми
+            новостями всего лишь одним щелчком.
+          </p>
+          <div class="screen1"></div>
+        </div>
+      </div>
+      <div class="information_block">
+        <h3 class="information_block-header">Как пользоваться?</h3>
+        <div class="information_block-wrapper">
+          <div class="screen2"></div>
+
+          <p class="information_text">
+            1) Перейдите на новостной сайт. Откройте новость в отдельном окне.
+            Сайты, с новостями которых мы работаем, можно посмотреть ниже
+            <br /><br />
+            2) Скопируйте URL страницы <br /><br />
+            3) Вставьте URL в поле ввода на
+            <a href="#">FAKER</a> и нажмите на кнопку "Проверить новость"
+          </p>
+        </div>
+      </div>
+      <div class="information_block">
+        <h3 class="information_block-header" id="siteNews">
+          С какими сайтами работаем?
+        </h3>
+        <div class="information_block-wrapper">
+          <div style="display: flex; flex-direction: column">
+            <p class="information_text">
+              Основываясь на рейтинге самых популярных СМИ в России, мы
+              поддерживаем работу со следующими сайтами:
+            </p>
+            <ul class="information_block-list">
+              <li><a href="https://ria.ru/">- ria.ru</a></li>
+              <li><a href="https://moslenta.ru/">- moslenta.ru</a></li>
+              <li><a href="https://www.kp.ru/">- kp.ru</a></li>
+              <li><a href="https://tass.ru/">- tass.ru</a></li>
+              <li><a href="https://www.interfax.ru/">- interfax.ru</a></li>
+              <li><a href="https://www.gazeta.ru/">- gazeta.ru</a></li>
+              <li><a href="https://perm.rbc.ru/">- rbc.ru</a></li>
+              <li><a href="https://www.mk.ru/">- mk.ru</a></li>
+              <li><a href="https://www.rg.ru/">- rg.ru</a></li>
+              <li><a href="https://meduzanews.ru/">- meduzanews.ru</a></li>
+              <li><a href="https://www.kommersant.ru/">- kommersant.ru</a></li>
+            </ul>
+          </div>
+
+          <div class="screen3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursor"></div>
+    <script src="static/script/gradient.js"></script>
+    <script src="static/script/sendNews.js"></script>
+    <script src="static/script/backButton.js"></script>
+    <script src="static/script/smoothAppear.js"></script>
+    <script src="static/script/cursor.js"></script>
+    <script src="static/script/darkTheme.js"></script>
+  </body>
+</html>
